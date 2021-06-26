@@ -1,29 +1,39 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "이곳은 DevHoonse 의 블로그입니다."
 date:   2021-06-26 23:02:25 +0900
-categories: jekyll update
+categories: devhoonse hello
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+안녕하세요, 이곳은 `DevHoonse` 의 블로그입니다.
 
-Jekyll requires blog post files to be named according to the following format:
+잊어선 안될 것들을 남길 `비망록` 혹은 `노트` 그 중간 어디쯤으로 사용되는 공간입니다.
 
-`YEAR-MONTH-DAY-title.MARKUP`
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+{% highlight javascript %}
+const DevHoonse = (function() {
+    const _SKILLS = ['Javascript', 'PYTHON', 'Django', 'Flask'];
+    const _PORTFOLIOS = [];
+    return {
+        function getSkills() {
+            return this._SKILLS;
+        }
 
-Jekyll also offers powerful support for code snippets:
+        function addSkill(skill) {
+            this._SKILLS.push(skill);
+        }
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+        function getPortfolios() {
+            return this._PORTFOLIOS;
+        }
+
+        function addPortfolio(work) {
+            this._PORTFOLIOS.push(work);
+        }
+    }
+})();
+// it is me
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+테마로 사용된 `jekyll-plainwhite` 에 대해 궁금하시면? [여기로~][jekyll-plainwhite]
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[jekyll-plainwhite]: https://github.com/samarsault/plainwhite-jekyll
