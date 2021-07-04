@@ -14,21 +14,21 @@ const DevHoonse = (function() {
     const _SKILLS = ['Javascript', 'PYTHON', 'Django', 'Flask'];
     const _PORTFOLIOS = [];
     return {
-        function getSkills() {
+        getSkills: function() {
             return this._SKILLS;
-        }
+        },
 
-        function addSkill(skill) {
+        addSkill: function(skill) {
             this._SKILLS.push(skill);
-        }
+        },
 
-        function getPortfolios() {
+        getPortfolios: function() {
             return this._PORTFOLIOS;
-        }
+        },
 
-        function addPortfolio(work) {
+        addPortfolio: function(work) {
             this._PORTFOLIOS.push(work);
-        }
+        },
     }
 })();
 // it is me
